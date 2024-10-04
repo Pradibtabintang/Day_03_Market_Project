@@ -25,3 +25,19 @@ if anggur_qty > 0:
 total = subtotal_apel + subtotal_jeruk + subtotal_anggur
 print(f"\nTotal: {total}")
 
+uang = int(input("\nMasukkan jumlah uang: "))
+            
+# Jika uang kurang
+if uang < total:
+    kurang = total - uang
+    print(f"Uangnya kurang sebesar {kurang}")
+            
+# Jika uang pas
+elif uang == total:
+    print("Terimakasih")
+            
+# Jika uang lebih
+else:
+    kembalian = uang - total
+    print("Terimakasih")
+    print(f"Uang kembali anda: {kembalian}")
