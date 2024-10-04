@@ -1,28 +1,22 @@
-def calculate_total(apel_qty, jeruk_qty, anggur_qty):
-    # Harga produk
-    harga_apel = 10000
-    harga_jeruk = 15000
-    harga_anggur = 20000
-    
-    # Perhitungan subtotal untuk setiap produk
-    subtotal_apel = apel_qty * harga_apel
-    subtotal_jeruk = jeruk_qty * harga_jeruk
-    subtotal_anggur = anggur_qty * harga_anggur
-    
-    # Tampilkan detail belanja
-    print("\nDetail Belanja:")
-    if apel_qty > 0:
-        print(f"Apel  : {apel_qty} x {harga_apel} = {subtotal_apel}")
-    if jeruk_qty > 0:
-        print(f"Jeruk : {jeruk_qty} x {harga_jeruk} = {subtotal_jeruk}")
-    if anggur_qty > 0:
-        print(f"Anggur: {anggur_qty} x {harga_anggur} = {subtotal_anggur}")
-    
-    # Total belanja
-    total = subtotal_apel + subtotal_jeruk + subtotal_anggur
-    print(f"\nTotal: {total}")
-    
-    return total
+# Create price list
+price_apple = 10000
+price_orange = 15000
+price_grape = 20000
+
+# Create User Input
+amount_apple = input("Masukan Jumlah apel: ")
+amount_orange = input("Masukan Jumlah Jeruk: ")
+amount_grape = input("Masukan Jumlah Anggur: ")
+
+# Convert user input to integer
+amount_apple = int(amount_apple)
+amount_orange = int(amount_orange)
+amount_grape = int(amount_grape)
+
+# Calculate Price
+price_apple_total = price_apple * amount_apple
+price_orange_total = price_orange * amount_orange
+price_grape_total = price_grape * amount_grape
 
 def process_payment(total):
     while True:
